@@ -1,0 +1,18 @@
+#!/bin/sh
+dire="/usr/share"
+#PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+#export PATH
+#export LD_LIBRARY_PATH=LD_LIBRARY_PATH:/usr/share/app/lib
+mkdir -p $dire #在/usr/share/中新建目录存放程序
+mv -f /app_MinerGUI $dire/ #将解压到根目录的程序移动到新建好的目录中
+#cd $dire/app/minerGUI/  #进入程序目录
+#./configure #执行脚:本生成Makefile
+#make #编译
+#echo "install Ok!"  #安装完成
+#ln -s $dire/app/minerGUI/minerGUI /usr/bin/minerGUI  #为应
+#用程序建立链接，链接到/usr/bin/addressbook上(可任意调用addressbook程序)
+#cp -rf $dire/application/lib/addressbook.png /usr/share/pixmaps/      #把图
+#标文件addressbook.png放在/usr/share/pixmaps/中
+#cp -rf $dire/app/lib/minerGUI.desktop /usr/share/applications/ #
+#把桌面文件addressbook.desktop放在/usr/share/applications/中
+echo "Ok!"

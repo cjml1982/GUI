@@ -1,0 +1,10 @@
+Package: MinerGUI
+Version: 1.0.1
+Section: utils
+Priority: optional
+Architecture: i386
+Depensd:
+#Depends: libqt5widgets5 (>= 5.0), libqt5gui5 (>= 5.0), libqt5core5 (>= 5.0)
+Installed-Size: 512
+Maintainer: mali@earthledger.com
+Description: MinerGUI package

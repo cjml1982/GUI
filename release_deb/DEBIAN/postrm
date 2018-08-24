@@ -1,0 +1,9 @@
+#!/bin/sh
+dire="/usr/share"
+#PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+#export PATH
+rm -rf $dire/app_MinerGUI  #删除产生的文件
+#rm -rf /usr/bin/minerGUI
+#rm -rf $dire/pixmaps/addressbook.png
+#rm -rf $dire/app/minerGUI.desktop
+echo "delete this software is Ok!"

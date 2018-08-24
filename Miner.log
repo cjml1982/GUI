@@ -1,0 +1,31 @@
+
+         **********  cpuminer-opt 3.7.2  *********** 
+     A CPU miner with multi algo support and optimized for CPUs
+     with AES_NI and AVX extensions.
+     BTC donation address: 12tdvfF7KmAsihBXQXynT6E6th2c2pByTT
+     Forked from TPruvot's cpuminer-multi with credits
+     to Lucas Jones, elmad, palmd, djm34, pooler, ig0tik3d,
+     Wolf0, Jeff Garzik and Optiminer.
+
+CPU: Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU features: SSE2 AES AVX AVX2
+SW built on Apr  7 2018 with GCC 5.4.0
+SW features: SSE2 AES AVX AVX2
+Algo features: SSE2 AES AVX AVX2
+Start mining with SSE2 AES AVX2
+
+[2018-08-16 20:16:34][90m Binding process to cpu mask 1[0m
+[2018-08-16 20:16:34] Starting Stratum on stratum+tcp://119.29.66.233:9332[0m
+[2018-08-16 20:16:34] 1 miner threads started, using 'lyra2z' algorithm.[0m
+[2018-08-16 20:16:34][33m Stratum difficulty set to 0.120212[0m
+[2018-08-16 20:16:34][33m Stratum difficulty set to 0.120212[0m
+std_stratum_gen_work
+std_set_target
+work_set_target work->target:830aa0
+work_set_target diff:5fd06780
+[2018-08-16 20:16:34][36m lyra2z block 42761, diff 85.013[0m
+std_stratum_gen_work
+std_set_target
+work_set_target work->target:830aa0
+work_set_target diff:5fd06780
+[2018-08-16 20:16:36] CPU #0: 65.54 kH, 84.08 kH/s[0m

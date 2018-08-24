@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>571</width>
+    <height>345</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="StartMining">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>210</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Click to start mining&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Server_content">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>110</y>
+      <width>141</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>stratum+tcp://119.29.66.233:9332</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>stratum+tcp://119.28.53.69:9332</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="Password">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>110</y>
+      <width>76</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Password :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Password_content">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>110</y>
+      <width>142</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#008000;&quot;&gt;Input&lt;/span&gt;&lt;span style=&quot; color:#c0c0c0;&quot;/&gt;&lt;span style=&quot; color:#008000;&quot;&gt;password&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Username">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>97</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>     Username :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Username_content">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>150</y>
+      <width>142</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#008000;&quot;&gt;Input username&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Server">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>98</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>            Server :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Algorithm">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>70</y>
+      <width>91</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>   Algorithm :</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Algorithm_content">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>70</y>
+      <width>141</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>lyra2z</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>argon2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>axiom</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>bitcore</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>bastion</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>blake</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>blakecoin</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>blake2s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>bmw</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>c11</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>cryptolight</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>cryptonight</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>decred</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>deep</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>dmd-gr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>drop</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>fresh</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>fugue256</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>groestl</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>heavy</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>hmq1725</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>hodl</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>jackpot</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>jha</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>keccak</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>keccakc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>lbry</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>luffa</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>lyra2v2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>lyra2re</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>lyra2rev2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>lyra2z330</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>m7m</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>myr-gr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>neoscrypt</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>nist5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>penta</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>pentablake</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>phi</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>phi1612</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>polytimos</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>pluck</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>quark</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>qubit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>scrypt</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>scrypt:N</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>scryptjane:nf</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sha256d</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sha256t</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>shavite3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sia</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sib</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>skein</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>skein2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>skunk</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>s3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>timetravel</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>timetravel10</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>tribus</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>vanilla</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>veltor</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>whirlcoin</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>whirlpool</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>whirlpoolx</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>wildkeccak</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>x11</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>x11evo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>x11gost</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>x13</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>x13sm3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>x14</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>x15</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>x17</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>xevan</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>yescrypt</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>yescryptr16</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>zr5</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="CPUAffinity">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>150</y>
+      <width>97</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>CPU Affinity :</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="CPUAffinity_content">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>150</y>
+      <width>141</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>8</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="Miner">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>70</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Miner :</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Miner_content">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>70</y>
+      <width>141</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>CPU Miner</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CUDA Miner</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>571</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave_setting"/>
+    <addaction name="actionLoad_setting"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="Console"/>
+   </widget>
+   <widget class="QMenu" name="menuDonate">
+    <property name="title">
+     <string>Donate</string>
+    </property>
+    <addaction name="Donate"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <widget class="QMenu" name="menuUsage">
+     <property name="title">
+      <string>Usage</string>
+     </property>
+     <addaction name="actionCPU_Miner"/>
+     <addaction name="actionCUDA_Miner"/>
+    </widget>
+    <addaction name="menuUsage"/>
+    <addaction name="About"/>
+   </widget>
+   <widget class="QMenu" name="menuAdvance">
+    <property name="title">
+     <string>Advance</string>
+    </property>
+    <addaction name="actionExtra_Config"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuAdvance"/>
+   <addaction name="menuDonate"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionSave_setting">
+   <property name="text">
+    <string>Save setting</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="About">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="Console">
+   <property name="text">
+    <string>Show Console</string>
+   </property>
+  </action>
+  <action name="Donate">
+   <property name="text">
+    <string>Donate</string>
+   </property>
+  </action>
+  <action name="actionLoad_setting">
+   <property name="text">
+    <string>Load Setting</string>
+   </property>
+  </action>
+  <action name="actionCPU_Miner">
+   <property name="text">
+    <string>CPU Miner</string>
+   </property>
+  </action>
+  <action name="actionCUDA_Miner">
+   <property name="text">
+    <string>CUDA Miner</string>
+   </property>
+  </action>
+  <action name="actionAdvance">
+   <property name="text">
+    <string>Advance</string>
+   </property>
+  </action>
+  <action name="actionExtra_Config">
+   <property name="text">
+    <string>Extra Config</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

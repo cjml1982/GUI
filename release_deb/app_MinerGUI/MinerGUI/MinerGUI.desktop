@@ -1,0 +1,24 @@
+[Desktop Entry] #必写
+Encoding=UTF-8  #编码
+Exec=minerGUI  #可执行程序名称 在/usr/bin/中
+Name=minerGUI  #程序名
+Name[zh_CN]=挖矿 #程序中文名
+X-KDE-StartupNotify=true #是否启动通知
+Comment=minerGUI  #注释
+#Icon=/usr/share/pixmaps/addressbook.png #图标位置
+Terminal=false #是否使用终端
+Type=Application  #类型
+Categories=Application;Utility; #放在附件菜单项中，也可以放在其他菜单项中
+#Categories第一个一般为Application
+#第二个一般为
+#互联网（Internet）Network
+#办公 Office
+#图形 Graphics
+#声音和视频 AudioVideo
+#系统工具 System
+#编程 Development
+#附件 Utility
+#影音 AudioVideo
+#游戏 Game
+#首选项 Settings（GNOME;GTK;Settings;HardwareSettings;）
+#系统管理 System;Settings;
